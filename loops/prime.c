@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+int i,num,a,b;
+printf("Enter Number a and b :\t");
+//scanf("%d",&num);
+scanf("%d",&a);
+scanf("%d",&b);
+
+for(num=a;num<=b;num++)
+{
+for(i=2; i<num; i++)
+	if(num%i==0)
+	break;
+if(num == i)
+	printf("%d  ",num);
+//else printf("Not Prime..\n");
+}
+}
